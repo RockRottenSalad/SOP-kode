@@ -3,7 +3,7 @@ CC = clang
 DEBUG_CFLAGS = -m64 -g -Wall -Wpedantic
 RELEASE_CFLAGS = -m64 -O3 -Wall -Wpedantic
 
-LD_FLAGS = -lX11 -lglfw3 -lGL -lpthread -lXrandr -lXi -ldl -lm
+LD_FLAGS = -lglfw3 -lGL -lpthread -lm -lX11
 
 OBJDIR = obj
 INCLUDEDIR = lib
