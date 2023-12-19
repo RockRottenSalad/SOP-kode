@@ -24,8 +24,6 @@ make release build run
 
 ## Windows
 
-### MSYS2 metoden
-
 Download terminalen MSYS2
 
 https://www.msys2.org/
@@ -47,12 +45,3 @@ make release windows_build run
 
 ```
 
-### CMAKE metoden
-
-Download GLFW kilde kode
-
-https://www.glfw.org/download.html
-
-Følg denne guide - til og med "Linking" afsnittet
-
-https://learnopengl.com/Getting-started/Creating-a-window
