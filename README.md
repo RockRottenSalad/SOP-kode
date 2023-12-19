@@ -4,7 +4,9 @@
 
 ## Mapper
 - giant-gml
+<br>
 Denne mappe indeholder matematik biblioteket alene
 
 - giant-gml-demo
+<br>
 Denne mappe indeholder OpenGL programmet, som er lavet i sammenhæng med biblioteket
