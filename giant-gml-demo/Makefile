@@ -1,5 +1,5 @@
 
-CC = gcc
+CC = clang
 DEBUG_CFLAGS = -m64 -g -Wall -Werror
 RELEASE_CFLAGS = -m64 -O3 -Wall -Werror
 

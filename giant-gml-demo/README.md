@@ -3,7 +3,7 @@
 
 ## Linux
 
-Installere følgende pakker vha din package manager
+Installere følgende pakker vha. din package manager
 
 - glfw3
 - libgl-dev
@@ -11,6 +11,7 @@ Installere følgende pakker vha din package manager
 - libx11 / libx11-dev
 - make
 - git
+- clang
 
 Kør følgende kommandoer
 
@@ -36,7 +37,7 @@ Kør følgende kommandoer
 ```
 pacman -Syu
 
-pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-glfw git
+pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-clang mingw-w64-x86_64-glfw git
 
 git clone https://github.com/RockRottenSalad/SOP-kode
 
