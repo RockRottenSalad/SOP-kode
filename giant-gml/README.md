@@ -1,6 +1,6 @@
 # giant-gml matematik biblioteket
 
-> Her kan koden til mit matematik bibliotek "giant-gml" ses
+> Her kan man se koden til mit matematik bibliotek "giant-gml"(Giant Is A Notably Tiny Graphics Math Library)
 
 ## Mapper
 - lib
