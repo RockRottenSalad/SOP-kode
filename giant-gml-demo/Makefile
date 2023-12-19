@@ -1,9 +1,10 @@
 
-CC = clang
-DEBUG_CFLAGS = -m64 -g -Wall -Wpedantic
-RELEASE_CFLAGS = -m64 -O3 -Wall -Wpedantic
+CC = gcc
+DEBUG_CFLAGS = -m64 -g -Wall -Werror
+RELEASE_CFLAGS = -m64 -O3 -Wall -Werror
 
 LD_FLAGS = -lglfw3 -lGL -lpthread -lm -lX11
+WINDOWS_LD_FLAGS = -lglfw3dll -lkernel32 -lopengl32 -lm
 
 OBJDIR = obj
 INCLUDEDIR = lib
@@ -23,8 +24,11 @@ release:
 build:
 	$(CC) $(OBJDIR)/*.o -o $(BINDIR)/main $(LD_FLAGS)
 
+windows_build:
+	$(CC) $(OBJDIR)/*.o -o $(BINDIR)/main.exe $(WINDOWS_LD_FLAGS)
+
 run:
-	./$(BINDIR)/main
+	./$(BINDIR)/main*
 
 clean:
 	rm -f $(OBJDIR)/*.o
