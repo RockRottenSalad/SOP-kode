@@ -26,9 +26,7 @@ int main(int argc, char** argv)
     mat4_t mat1 = MAT4_IDENTITY_INIT;
     mat4_t mat2 = MAT4_IDENTITY_INIT;
 
-    vec3_t vec = VEC3_INIT;
-    vec[X] = 2.0f;
-    vec[Y] = 1.0f;
+    vec3_t vec = {2.0f, 1.0f, 0.0f};
     vec[Z] = -3.0f;
 
     
@@ -42,8 +40,15 @@ int main(int argc, char** argv)
     printf("Value of vec is\n");
     giant_vec3_print(vec);
 
+    printf("\n");
+
     printf("Value of mat1 is\n");
     giant_mat4_print(mat1);
+
+    printf("\n");
+
+    printf("Last element in mat1 is\n");
+    printf("%f\n", mat1[3][3]);
 
     return 0;
 }
@@ -59,5 +64,8 @@ Value of mat1 is
 0.238039        0.934156        -0.265877       0.000000
 -0.599868       0.356696        0.716189        0.000000
 -0.213787       2.089273        3.388102        1.000000
+
+Last element in mat1 is
+1.000000
 
 ```
