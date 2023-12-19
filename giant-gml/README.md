@@ -13,7 +13,7 @@ Denne mappe indeholder alle source(.c) filer. Funktionerne bliver defineret her
 
 ## Hvordan det bruges
 
-Mappen inde i `lib` bliver sat inde i en include folder. Mappen ind i `src` bliver lagt ind sammen med resten af kilde filder i projektet man bruge biblioteket til.
+Mappen inde i `lib` bliver sat inde i en include folder. Mappen inde i `src` bliver lagt ind sammen med resten af ".c" filerne i projektet man bruge biblioteket til.
 <br><br>
 ### Demostration
 
